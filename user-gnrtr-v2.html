@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Username Generator.V2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="loader">
+    <div id="text" class="fade">Made By <b>J.Yousefinia</b></div>
+    <div id="dots-container" class="dots hidden">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+
+  <div id="content">
+    <div class="container">
+      <h2>Username Generator.VS2</h2>
+      <input type="number" id="count" placeholder="Count">
+      <input type="text" id="start" placeholder="Start with (e.g., mh3m325)">
+      <div class="form-controls" style="">
+        <button onclick="generate()">Generate</button>
+        <button onclick="copyToClipboard()">Copy</button>
+        <button onclick="downloadFile()">Download</button>
+      </div>
+      <textarea id="output" readonly placeholder="Generated usernames and passwords will appear here..."></textarea>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
